@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "passwordmanager"
+version = "0.1.0"
+description = "Simple password manager in python"
+authors = ["jo-project <jo.project.0911@gmail.com>"]
+readme = "README.md"
+packages = [
+  { include = "app" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+cryptography = "^40.0.2"
+rich = "^13.3.5"
+
+[tool.poetry.scripts]
+app = "app.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
